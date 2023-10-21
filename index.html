@@ -4,21 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome to Jimini's Talk</title>
+    <link
+      rel="stylesheet"
+      href="C:\Users\MS\Desktop\kokoa-clone-2023\css\style.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/3b9961b983.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div id="status-bar">
+    <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <!-- To Do: Wifi Icon -->
+        <i class="fa-solid fa-wifi"></i>
       </div>
       <div class="status-bar__column">
         <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>100%</span>
-        <!-- Battery Icon -->
-        <!-- Lightning Icon -->
+        <i class="fa-solid fa-battery-full"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
       </div>
     </div>
+
+    <header class="welcome-header">
+      <h1 class="welcome-header__title">Welcome to Jimini's talk</h1>
+      <p class="welcome-header__text">
+        If you have a Kokoa Account, log in with your email or phone number.
+      </p>
+    </header>
+
+    <form class="login-form" action="friends.html" method="get">
+      <input
+        name="username"
+        class="login-form__input"
+        type="text"
+        placeholder="Email or phone number"
+      />
+      <input
+        name="password"
+        class="login-form__input"
+        type="password"
+        placeholder="Password"
+      />
+      <input class="login-form__btn" type="submit" value="Log In" />
+      <a class="login-form__a" href="#">Find jimini's Account or Password</a>
+    </form>
   </body>
 </html>
