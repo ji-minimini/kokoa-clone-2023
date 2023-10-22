@@ -7,7 +7,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - Jimini's Talk</title>
+    <title>Chats - Jimini's Talk</title>
     <script
       src="https://kit.fontawesome.com/3b9961b983.js"
       crossorigin="anonymous"
@@ -30,57 +30,32 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
         <span><i class="fa-solid fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fa-solid fa-circle-info"></i> Friends' Names Display
-      <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            class="user-component__avatar user-component__avatar--xl"
+            class="user-component__avatar user-component__avatar"
             src="https://github.com/ji-minimini/kokoa-clone-2023/blob/main/pic/avatar.png?raw=true"
           />
           <div class="user-component_column__text">
-            <h4 class="user-component__name">Jimini</h4>
-            <!-- <h6 class="user-component__comment">Do what ever you want</h6>-->
+            <h4 class="user-component__name user-component__name--notb-bold">
+              Jimini
+            </h4>
+            <h6 class="user-component__comment">Do what ever you want</h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>Channel</span>
-          <i class="fa-solid fa-chevron-up fa-xs"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              class="user-component__avatar user-component__avatar--sm"
-              src="https://github.com/ji-minimini/kokoa-clone-2023/blob/main/pic/avatar.png?raw=true"
-            />
-            <div class="user-component_column__text">
-              <h4 class="user-component__name user-component__name--notb-bold">
-                Channel
-              </h4>
-              <!-- <h6 class="user-component__comment">Do what ever you want</h6>-->
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fa-solid fa-chevron-right fa-xs"></i>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">11:20</span>
+          <div class="user-component__badge badge">1</div>
         </div>
       </div>
     </main>
@@ -89,13 +64,13 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
+            <i class="fa-solid fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -107,9 +82,8 @@
           <a class="nav__link" href="more.html">
             <div class="nav__notice">
               <span class="nav__notice-upper"></span>
-              <i class="fa-solid fa-ellipsis fa-2x"></i>
-            </div>
-          </a>
+              <i class="fa-solid fa-ellipsis fa-2x"></i>          
+            </a>
         </li>
       </ul>
     </nav>

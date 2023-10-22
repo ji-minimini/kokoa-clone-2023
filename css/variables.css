@@ -3,4 +3,7 @@
   --pointcolor: #8062d6;
   --boldcolor: #322653;
   --backcolor: #ffd2d7;
+  --horizontal-space: 25px;
+  --mainborder: 1px solid rgba(50, 38, 83, 0.2);
+  --opacityfont: rgba(50, 38, 83, 0.5);
 }

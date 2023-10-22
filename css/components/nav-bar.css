@@ -17,27 +17,15 @@
   color: var(--boldcolor);
 }
 .nav__notification {
-  display: flex;
-  background-color: var(--backcolor);
-  color: var(--boldcolor);
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  justify-content: center;
-  align-items: center;
-  color: var(--boldcolor);
-  font-weight: 800;
   position: absolute;
   left: 15px;
   bottom: 15px;
 }
-.nav__notice {
-  display: block;
+.nav__notice-upper {
+  position: absolute;
   background-color: var(--backcolor);
   width: 6px;
   height: 6px;
   border-radius: 3px;
-  position: absolute;
-  right: 10px;
-  box-sizing: border-box;
+  right: 8px;
 }
