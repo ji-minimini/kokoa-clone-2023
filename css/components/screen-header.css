@@ -19,8 +19,11 @@
 .dot__upper {
   display: block;
   background-color: var(--boldcolor);
-  box-sizing: border-box;
   width: 5px;
   height: 5px;
   border-radius: 2.5px;
+  position: fixed;
+}
+.dot {
+  position: relative;
 }

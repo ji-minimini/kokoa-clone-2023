@@ -7,7 +7,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chats - Jimini's Talk</title>
+    <title>settings - Jimini's Talk</title>
     <script
       src="https://kit.fontawesome.com/3b9961b983.js"
       crossorigin="anonymous"
@@ -29,37 +29,33 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-        <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
-        <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-        <span><i class="fa-solid fa-music fa-lg"></i></span>
-        <span><i class="fa-solid fa-gear fa-lg"></i></span>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <i class="fa-solid fa-angle-left fa-2xl"></i>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Settings</h1>
+      </div>
+      <div class="alt-header__column">
+        <i class="fa-solid fa-magnifying-glass fa-2xl"></i>
       </div>
     </header>
 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img
-            class="user-component__avatar user-component__avatar"
-            src="https://github.com/ji-minimini/kokoa-clone-2023/blob/main/pic/avatar.png?raw=true"
-          />
-          <div class="user-component_column__text">
-            <h4 class="user-component__name user-component__name--notb-bold">
-              Jimini
-            </h4>
-            <h6 class="user-component__comment">You can do whatever you want</h6>
-          </div>
-        </div>
-        <div class="user-component__column">
-          <span class="user-component__time">11:20</span>
-          <div class="user-component__badge badge">1</div>
-        </div>
-      </div>
-    </main>
-
+    <main class="main-screen"></main>
+    <ul class="settings-list">
+      <li class="settings-setting">
+        <i class="fa-solid fa-bullhorn"></i>
+        <span>Notice</span>
+      </li>
+      <li class="settings-setting">
+        <i class="fa-solid fa-flask"></i>
+        <span>Lab</span>
+      </li>
+      <li class="settings-setting">
+        <i class="fa-solid fa-circle-info"></i>
+        <span>Version</span>
+      </li>
+    </ul>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -70,7 +66,7 @@
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-solid fa-comment fa-2x"></i>
+            <i class="fa-regular fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
@@ -82,8 +78,9 @@
           <a class="nav__link" href="more.html">
             <div class="nav__notice">
               <span class="nav__notice-upper"></span>
-              <i class="fa-solid fa-ellipsis fa-2x"></i>          
-            </a>
+            </div>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
         </li>
       </ul>
     </nav>
