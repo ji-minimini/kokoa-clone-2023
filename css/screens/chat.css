@@ -14,6 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.8s linear;
 }
 .alt-header {
   background-color: var(--lavender);
@@ -96,11 +97,11 @@
   position: relative;
 }
 .reply input {
-  padding: 5px;
-  height: 30px;
+  padding: 14px;
   width: 100%;
   border: var(--mainborder);
-  border-radius: 20px;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 .reply__column:last-child > i,
 .reply button {
@@ -122,4 +123,23 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply:focus-within input {
+  width: 93vw;
+  transform: translateX(-13%);
 }
